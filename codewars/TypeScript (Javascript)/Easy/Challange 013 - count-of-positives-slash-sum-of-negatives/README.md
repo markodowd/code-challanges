@@ -1,0 +1,48 @@
+# The Challange
+
+https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/javascript
+
+```
+Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+
+If the input array is empty or null, return an empty array.
+Example
+
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+
+```
+
+# My Answer
+
+```
+- See .js file
+```
+
+# Comments & Hurdles
+
+- My code seems overly complicated. Was stuck until used (input.length < 1) to check for empty array.
+- Surprised the top answers are fairly similar approach.
+
+# Favourite Answer (By Others)
+
+```
+function countPositivesSumNegatives(input) {
+    if (input == null || input.length == 0)
+      return [];
+
+    var positive = 0;
+    var negative = 0;
+
+    for (var i=0, l=input.length; i<l; ++i)
+    {
+      if (input[i] > 0)
+        ++ positive;
+      else
+        negative += input[i];
+    }
+
+    return [positive, negative];
+}
+```
