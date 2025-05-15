@@ -1,3 +1,6 @@
-SELECT n, CAST(POWER(n, 2) AS INT) as res
-FROM square;
+SELECT
+    n,
+    CAST(POWER(n, 2) AS INT) AS res
+FROM
+    square;
 
