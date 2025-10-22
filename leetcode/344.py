@@ -10,6 +10,5 @@ class Solution:
 
         for i in range(str_end // 2):
             temp = s[i]
-            s[i] = s[str_end - (i+1)]
-            s[str_end - (i+1)] = temp
-
+            s[i] = s[str_end - (i + 1)]
+            s[str_end - (i + 1)] = temp

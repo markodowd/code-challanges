@@ -5,7 +5,7 @@ class Solution:
 
         left = 1
         right = x // 2
-        
+
         while left <= right:
             mid = (left + right) // 2
             square = mid * mid
@@ -18,4 +18,3 @@ class Solution:
                 right = mid - 1
 
         return right
-

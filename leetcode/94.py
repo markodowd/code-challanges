@@ -7,6 +7,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
@@ -14,12 +15,11 @@ class Solution:
         def inorder(root):
             if not root:
                 return
-            
+
             inorder(root.left)
             result.append(root.val)
             inorder(root.right)
-        
+
         inorder(root)
 
         return result
-

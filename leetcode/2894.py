@@ -10,4 +10,3 @@ class Solution:
                 num1 += num
 
         return num1 - num2
-

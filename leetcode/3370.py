@@ -6,4 +6,3 @@ class Solution:
             binary_str += "1"
 
         return int(binary_str, 2)
-

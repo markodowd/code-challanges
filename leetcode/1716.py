@@ -13,4 +13,3 @@ class Solution:
                 week += 1
 
         return total
-

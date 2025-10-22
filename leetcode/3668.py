@@ -10,4 +10,3 @@ class Solution:
                 result.append(num)
 
         return result
-
