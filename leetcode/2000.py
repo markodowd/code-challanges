@@ -3,9 +3,6 @@ class Solution:
         index = word.find(ch)
 
         if index >= 0:
-            new_word = ""
-            new_word += word[index::-1]
-            new_word += word[index + 1 :]
-            return new_word
+            return word[index::-1] + word[index + 1 :]
         else:
             return word
