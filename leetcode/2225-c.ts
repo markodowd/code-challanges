@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function findWinners(_) {
   let e = Array(100001).fill(-1)
   for (let l = 0; l < _.length; l++) {

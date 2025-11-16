@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 // dynamic programming approach
 // https://youtu.be/Y0lT9Fck7qI?si=EpcoJAdV9KDEGoQB
 function climbStairs(n: number): number {

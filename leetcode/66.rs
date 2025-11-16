@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 impl Solution {
     pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
         for i in (0..digits.len()).rev() {

@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 // Kadane's algorithm - https://youtu.be/5WZl3MMT0Eg
 
 function maxSubArray(nums: number[]): number {

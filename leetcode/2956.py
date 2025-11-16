@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
         nums1Matches = 0

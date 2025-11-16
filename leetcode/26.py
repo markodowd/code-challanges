@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         writer = 1

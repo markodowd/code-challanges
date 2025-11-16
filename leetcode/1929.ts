@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function getConcatenation(nums: number[]): number[] {
   const numsLength: number = nums.length
   const arr: number[] = []

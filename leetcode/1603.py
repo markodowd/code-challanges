@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class ParkingSystem:
 
     def __init__(self, big: int, medium: int, small: int):

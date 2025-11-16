@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function uniqueOccurrences(arr: number[]): boolean {
   const map = new Map<number, number>()
 

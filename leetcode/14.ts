@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function longestCommonPrefix(strs: string[]): string {
   return strs.reduce((prev, next) => {
     let i = 0;

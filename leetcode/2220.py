@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def minBitFlips(self, start: int, goal: int) -> int:
         bin_a = bin(start)[2:]

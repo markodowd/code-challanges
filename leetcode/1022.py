@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):

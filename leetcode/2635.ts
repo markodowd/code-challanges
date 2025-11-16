@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function map(arr: number[], fn: (n: number, i: number) => number): number[] {
     let answer = []
 

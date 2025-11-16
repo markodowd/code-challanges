@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function minFallingPathSum(matrix: number[][]): number {
   // The criteria indicates that the matrix will be a square so we can use the length for the rows and columns
   const matrixLength: number = matrix.length

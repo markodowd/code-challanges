@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:
         if n <= 0:

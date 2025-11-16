@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def findClosest(self, x: int, y: int, z: int) -> int:
         abs_1 = abs(x - z)

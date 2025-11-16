@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def convertDateToBinary(self, date: str) -> str:
         nums_list = list(map(int, date.split("-")))

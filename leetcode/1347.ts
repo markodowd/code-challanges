@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function minSteps(s: string, t: string): number {
   const sMap = new Map<string, number>()
   const tMap = new Map<string, number>()

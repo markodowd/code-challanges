@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function findIntersectionValues(nums1: number[], nums2: number[]): number[] {
   let nums1Matches = 0
   let nums2Matches = 0

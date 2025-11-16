@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function canConstruct(ransomNote: string, magazine: string): boolean {
   const magazineMap = new Map<string, number>()
 

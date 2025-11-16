@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:  # Define a class named Solution (commonly used in LeetCode problems).
     def isValid(
         self, s: str

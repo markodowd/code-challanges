@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 const calculateCustomerWealth = (account: number[]): number =>
   account.reduce((sum, balance) => sum + balance, 0)
 

@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function findWinners(matches: number[][]): number[][] {
   const win = new Map<number, number>() // Track how many times a player has won
   const loss = new Map<number, number>() // Track how many times a player has lost

@@ -1,3 +1,7 @@
+# Author: Mark O'Dowd
+# Email: contact@markodowd.dev
+# LeetCode: https://leetcode.com/u/markodowd
+
 class Solution:
     def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
         word_count = {}

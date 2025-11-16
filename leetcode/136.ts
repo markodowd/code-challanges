@@ -1,3 +1,7 @@
+// Author: Mark O'Dowd
+// Email: contact@markodowd.dev
+// LeetCode: https://leetcode.com/u/markodowd
+
 function singleNumber(nums: number[]): number {
   //   create map counting number of times each item appeared
   let countMap = nums.reduce((el, idx) => {
