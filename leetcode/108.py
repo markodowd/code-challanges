@@ -1,8 +1,4 @@
-# Author: Mark O'Dowd
-# Email: contact@markodowd.dev
-# LeetCode: https://leetcode.com/u/markodowd
-
-from typing import List, Optional
+from typing import Optional
 
 
 class TreeNode:
@@ -11,9 +7,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
 class Solution:
-    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+    def sortedArrayToBST(self, nums: list[int]) -> Optional[TreeNode]:
         if not nums:
             return None
 
@@ -22,6 +17,7 @@ class Solution:
         root = TreeNode(nums[middle])
 
         root.left = self.sortedArrayToBST(nums[:middle])
-        root.right = self.sortedArrayToBST(nums[middle + 1 :])
+        root.right = self.sortedArrayToBST(nums[middle+1:])
 
         return root
+
