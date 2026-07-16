@@ -1,23 +1,14 @@
-# Bad performance - answer can just be n itself => n
 class Solution:
     def gcdOfOddEvenSums(self, n: int) -> int:
-        sumOdd = 0
-        sumEven = 0
+        sum_odd = n * n
+        sum_even = n * n + n
 
-        odd = True
+        tracker = n
 
-        for num in range(1, (n * 2) + 1):
-            if odd:
-                sumOdd += num
-                odd = False
-            else:
-                sumEven += num
-                odd = True
+        while tracker >= 1:
+            if sum_odd % tracker == 0 and sum_even % tracker == 0:
+                return tracker
 
-        gcd = 1
+            tracker -= 1
 
-        for i in range(1, sumOdd + 1):
-            if sumOdd % i == 0 and sumEven % i == 0:
-                gcd = i
-
-        return gcd
+        return 1
