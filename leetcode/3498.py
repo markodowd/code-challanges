@@ -1,19 +1,31 @@
-# Author: Mark O'Dowd
-# Email: contact@markodowd.dev
-# LeetCode: https://leetcode.com/u/markodowd
-
-from typing import List
+import unittest
 
 
 class Solution:
+    def get_reversed_value(self, char: str) -> int:
+        char = char.lower()
+
+        return ord("z") - ord(char) + 1
+
     def reverseDegree(self, s: str) -> int:
-        nums: List[int] = []
+        total = 0
 
-        for idx, char in enumerate(s):
-            char_idx = ord(char) - ord("a") + 1
-            rev_idx = 27 - char_idx
-            rev_product = rev_idx * (idx + 1)
+        for i in range(len(s)):
+            total += self.get_reversed_value(s[i]) * (i + 1)
 
-            nums.append(rev_product)
+        return total
 
-        return sum(nums)
+
+class TestReverseDegree(unittest.TestCase):
+    def setUp(self) -> None:
+        self.solver = Solution()
+
+    def test_1(self):
+        self.assertEqual(self.solver.reverseDegree("abc"), 148)
+
+    def test_2(self):
+        self.assertEqual(self.solver.reverseDegree("zaza"), 160)
+
+
+if __name__ == "__main__":
+    unittest.main()
