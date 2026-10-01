@@ -1,41 +1,42 @@
-# Author: Mark O'Dowd
-# Email: contact@markodowd.dev
-# LeetCode: https://leetcode.com/u/markodowd
-
-class Solution:  # Define a class named Solution (commonly used in LeetCode problems).
-    def isValid(
-        self, s: str
-    ) -> bool:  # Define a method that checks if a string of brackets is valid.
-        opening_brackets = "({["  # Define a string containing opening brackets.
-        stack = []  # Initialize an empty list to use as a stack.
-
-        for char in s:  # Iterate over each character in the input string.
-            if char in opening_brackets:  # If the character is an opening bracket,
-                stack.append(char)  # Push it onto the stack.
-                continue  # Continue to the next iteration of the loop.
-
-            if (
-                not stack
-            ):  # If the stack is empty (i.e., there's no matching opening bracket),
-                return False  # The string is invalid, so return False.
-
-            top = stack.pop()  # Pop the last added opening bracket from the stack.
-            if (  # Check if the current closing bracket does not match the popped opening bracket.
-                (char == ")" and top != "(")  # Mismatch for parentheses.
-                or (char == "}" and top != "{")  # Mismatch for curly brackets.
-                or (char == "]" and top != "[")  # Mismatch for square brackets.
-            ):
-                return False  # If there’s a mismatch, return False.
-
-        return (
-            not stack
-        )  # If the stack is empty at the end, return True; otherwise, return False.
+import unittest
 
 
-solution = Solution()
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        mapping = {")": "(", "}": "{", "]": "["}
 
-assert solution.isValid("()") is True
-assert solution.isValid("()[]{}") is True
-assert solution.isValid("(]") is False
-assert solution.isValid("([])") is True
-assert solution.isValid("]") is False
+        for char in s:
+            if char in mapping:
+                top_element = stack.pop() if stack else "#"
+
+                if mapping[char] != top_element:
+                    return False
+            else:
+                stack.append(char)
+
+        return not stack
+
+
+class TestIsValid(unittest.TestCase):
+    def setUp(self) -> None:
+        self.solver = Solution()
+
+    def test_1(self):
+        self.assertEqual(self.solver.isValid("()"), True)
+
+    def test_2(self):
+        self.assertEqual(self.solver.isValid("()[]{}"), True)
+
+    def test_3(self):
+        self.assertEqual(self.solver.isValid("(]"), False)
+
+    def test_4(self):
+        self.assertEqual(self.solver.isValid("([])"), True)
+
+    def test_5(self):
+        self.assertEqual(self.solver.isValid("]"), False)
+
+
+if __name__ == "__main__":
+    unittest.main()
