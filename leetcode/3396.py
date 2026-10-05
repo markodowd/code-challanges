@@ -3,16 +3,15 @@ import unittest
 
 class Solution:
     def minimumOperations(self, nums: list[int]) -> int:
-        ops = 0
+        seen = set()
 
-        while len(nums) > 0 and len(set(nums)) != len(nums):
-            nums = nums[3:]
-            ops += 1
+        for i in range(len(nums) - 1, -1, -1):
+            if nums[i] in seen:
+                return i // 3 + 1
 
-            if len(nums) == len(set(nums)):
-                break
+            seen.add(nums[i])
 
-        return ops
+        return 0
 
 
 class TestMinimumOperations(unittest.TestCase):
