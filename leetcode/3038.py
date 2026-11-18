@@ -1,18 +1,12 @@
 class Solution:
     def maxOperations(self, nums: list[int]) -> int:
-        count = 1
-        length = 0
         score = nums[0] + nums[1]
+        count = 0
 
-        nums_len = len(nums)
-
-        if nums_len % 2 != 0:
-            length = nums_len - 1
-        else:
-            length = nums_len
-
-        for i in range(2, length, 2):
-            if (nums[i] + nums[i + 1]) == score:
+        for i in range(0, len(nums) - 1, 2):
+            if nums[i] + nums[i + 1] == score:
                 count += 1
+            else:
+                break
 
         return count
